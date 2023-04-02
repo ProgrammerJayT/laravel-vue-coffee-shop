@@ -1,6 +1,4 @@
 <template>
-  <NavBar />
-
   <section class="page-section about-heading">
     <div class="container">
       <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="assets/img/about.jpg">
@@ -29,17 +27,4 @@
       </div>
     </div>
   </section>
-
-  <Footer />
 </template>
-
-<script>
-import NavBar from '../components/NavBar.vue';
-import Footer from '../components/Footer.vue';
-export default {
-  components: {
-    NavBar,
-    Footer
-  }
-}
-</script>

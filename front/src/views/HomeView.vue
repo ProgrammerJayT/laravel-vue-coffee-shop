@@ -1,6 +1,4 @@
 <template>
-  <NavBar />
-
   <section class="page-section clearfix">
     <div class="container">
       <div class="intro"><img class="img-fluid intro-img mb-3 mb-lg-0 rounded" src="assets/img/intro.jpg">
@@ -32,17 +30,4 @@
       </div>
     </div>
   </section>
-
-  <Footer />
 </template>
-
-<script>
-import NavBar from '../components/NavBar.vue';
-import Footer from '../components/Footer.vue';
-export default {
-  components: {
-    NavBar,
-    Footer
-  }
-}
-</script>
