@@ -4,16 +4,13 @@
       <div class="row">
         <div class="col-xl-9 mx-auto">
           <div class="text-center cta-inner rounded">
-            <h2 class="section-heading mb-5"><span class="section-heading-upper">Come On In</span><span
-                class="section-heading-lower">We're Open</span></h2>
+            <h2 class="section-heading mb-5">
+              <span class="section-heading-upper">Come On In</span>
+              <span class="section-heading-lower">We're Open</span>
+            </h2>
 
-            <ul class="list-unstyled text-start mx-auto list-hours mb-5">
-
-              <li class="d-flex list-unstyled-item list-hours-item" v-for="operationDay in storeOperation">
-                {{ operationDay.day }}
-                <span class="ms-auto">{{ operationDay.hours == null ? 'Closed' : operationDay.hours }}</span>
-              </li>
-            </ul>
+            <!-- Call store operation component and bind values -->
+            <StoreOperation :operation=storeOperation />
 
             <p class="address mb-5">
               <em>
@@ -21,7 +18,12 @@
                 <span><br>Golden Valley, Minnesota</span>
               </em>
             </p>
-            <p class="address mb-0"><small><em>Call Anytime</em></small><span><br>(317) 585-8468</span></p>
+
+            <p class="address mb-0">
+              <small><em>Call Anytime</em></small>
+              <span><br>(317) 585-8468</span>
+            </p>
+
           </div>
         </div>
       </div>
@@ -60,6 +62,7 @@
 </template>
 
 <script>
+import StoreOperation from '../components/StoreOperation.vue';
 export default {
   data() {
     return {
@@ -73,6 +76,10 @@ export default {
         { day: 'Saturday', hours: '9:00 AM to 5:00 PM' },
       ]
     }
+  },
+
+  components: {
+    StoreOperation
   }
 }
 </script>
