@@ -1,9 +1,54 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
-</script>
-
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <h1 class="text-center text-white d-none d-lg-block site-heading"><span class="text-primary site-heading-upper mb-3">A
+      Free Bootstrap 5 Business Theme&nbsp;</span><span class="site-heading-lower">Business Casual</span></h1>
+  <nav class="navbar navbar-dark navbar-expand-lg bg-dark py-lg-4" id="mainNav">
+    <div class="container"><a class="navbar-brand text-uppercase d-lg-none text-expanded" href="#">Brand</a><button
+        data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarResponsive"><span
+          class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="store.html">Store</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro"><img class="img-fluid intro-img mb-3 mb-lg-0 rounded" src="assets/img/intro.jpg">
+        <div class="text-center intro-text p-5 rounded bg-faded">
+          <h2 class="section-heading mb-4"><span class="section-heading-upper">Fresh Coffee</span><span
+              class="section-heading-lower">Worth Drinking</span></h2>
+          <p class="mb-3">Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients.
+            Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!
+          </p>
+          <div class="mx-auto intro-button"><a class="btn btn-primary d-inline-block mx-auto btn-xl" role="button"
+              href="#">Visit Us Today!</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="page-section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="text-center cta-inner rounded">
+            <h2 class="section-heading mb-4"><span class="section-heading-upper">Our Promise</span><span
+                class="section-heading-lower">To You</span></h2>
+            <p class="mb-0">When you walk into our shop to start your day, we are dedicated to providing you with friendly
+              service, a welcoming atmosphere, and above all else, excellent products made with the highest quality
+              ingredients. If you are not satisfied, please let us know and we will do whatever we can to make things
+              right!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="text-center footer text-faded py-5">
+    <div class="container">
+      <p class="m-0 small">Copyright&nbsp;©&nbsp;Brand 2023</p>
+    </div>
+  </footer>
 </template>
