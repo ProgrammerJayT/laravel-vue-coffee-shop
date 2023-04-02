@@ -12,7 +12,7 @@
 export default {
     data() {
         return {
-            footerParagraph: 'Copyright&nbsp;©&nbsp;Brand 2023',
+            footerParagraph: 'Copyright © Brand 2023',
         }
     }
 }
